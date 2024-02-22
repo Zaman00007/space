@@ -4,6 +4,9 @@ import Navbar from "./components/Navbar";
 import CosmoCast from "./components/CosmoCast";
 import Earth from "./components/Earth";
 import Mars from "./components/Mars";
+import Jupiter from "./components/Jupiter";
+import Neptune from "./components/Neptune";
+import Saturn from "./components/Saturn";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
@@ -47,6 +50,16 @@ fetch(`${API_URL}`)
           <Route path="/Mars" exact>
             <Mars/>
           </Route>
+          <Route path="/Jupiter" exact>
+            <Jupiter/>
+          </Route>
+          <Route path="/Saturn" exact>
+            <Saturn/>
+          </Route>
+          <Route path="/Neptune" exact>
+            <Neptune/>
+          </Route>
+          
         </Switch>
       </Router>
     </div>

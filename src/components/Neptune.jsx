@@ -1,6 +1,6 @@
 import React from "react";
-import bgVideo from "./assets/neptune-bg.mp4";
-import Navbar from "./components/Navbar";
+import bgVideo from "../assets/neptune-bg.mp4";
+import Navbar from "./Navbar";
 
 const Neptune = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import bgVideo from "./assets/jupter-bg1.mp4";
-import Navbar from "./components/Navbar";
+import bgVideo from "../assets/jupiter-bg1.mp4";
+import Navbar from "./Navbar";
 
 const Jupiter = () => {
   return (

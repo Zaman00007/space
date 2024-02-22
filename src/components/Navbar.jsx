@@ -46,8 +46,8 @@ const Navbar = () => {
                 <div className="dropdown-menu">
                   <Link to="/Mars">Mars</Link>
                   <Link to="/Jupiter">Jupiter</Link>
-                  <Link to="/Mars">Venus</Link>
-                  <Link to="/Uranus">Uranus</Link>
+                  <Link to="/Saturn">Saturn</Link>
+                  <Link to="/Neptune">Uranus</Link>
                 </div>
               )}
             </div>
