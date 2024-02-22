@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ planetName }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -16,7 +15,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-4 text-white font-bold text-2xl">
             <img src={Logo} alt="" className="w-10" />
-            <span>CosmoCast</span>
+            <Link to="/"><span>CosmoCast</span></Link>
           </div>
           <div className="text-white">
             <ul className="flex items-center gap-6 text-xl py-4">
@@ -40,7 +39,7 @@ const Navbar = () => {
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full dropdown-toggle"
                 onClick={toggleDropdown}
               >
-                Earth
+                {planetName}
               </button>
               {isOpen && (
                 <div className="dropdown-menu">
@@ -48,6 +47,7 @@ const Navbar = () => {
                   <Link to="/Jupiter">Jupiter</Link>
                   <Link to="/Saturn">Saturn</Link>
                   <Link to="/Neptune">Uranus</Link>
+                  <Link to="/">{planetName}</Link>
                 </div>
               )}
             </div>

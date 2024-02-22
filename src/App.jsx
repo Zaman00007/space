@@ -1,7 +1,4 @@
 import React from "react";
-import bgVideo from "./assets/earth-bg.mp4";
-import Navbar from "./components/Navbar";
-import CosmoCast from "./components/CosmoCast";
 import Earth from "./components/Earth";
 import Mars from "./components/Mars";
 import Jupiter from "./components/Jupiter";
@@ -30,18 +27,6 @@ fetch(`${API_URL}`)
 
   return (
     <div>
-      {/* <div className="h-[700px] relative">
-        <video
-          autoPlay={true}
-          loop={true}
-          muted={true}
-          className="fixed right-0 top-0 h-[700[px]] w-full object-cover z[-1]"
-        >
-          <source src={bgVideo} type="video/mp4" />
-        </video>
-        
-        <Navbar />
-      </div> */}
       <Router>
         <Switch>
           <Route path="/" exact>
