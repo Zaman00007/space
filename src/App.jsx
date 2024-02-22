@@ -1,6 +1,7 @@
 import React from "react";
 import bgVideo from "./assets/earth-bg.mp4";
 import Navbar from "./components/Navbar";
+import CosmoCast from "./components/CosmoCast";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         >
           <source src={bgVideo} type="video/mp4" />
         </video>
+        {/* <CosmoCast /> */}
         <Navbar />
       </div>
     </div>
