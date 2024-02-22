@@ -1,6 +1,6 @@
 import React from "react";
-import bgVideo from "./assets/mars-bg.mp4";
-import Navbar from "./components/Navbar";
+import bgVideo from "../assets/mars-bg.mp4";
+import Navbar from "./Navbar";
 
 const Mars = () => {
   return (

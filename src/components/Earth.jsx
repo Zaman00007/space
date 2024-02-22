@@ -1,13 +1,10 @@
 import React from "react";
-import bgVideo from "./assets/earth-bg.mp4";
-import Navbar from "./components/Navbar";
-import CosmoCast from "./components/CosmoCast";
-import Earth from "./components/Earth";
-import Mars from "./components/Mars";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import bgVideo from "../assets/earth-bg.mp4";
+import Navbar from "./Navbar";
 
 
-const App = () => {
+
+const Earth = () => {
 const API_URL = 'https://api.nasa.gov/DONKI/CMEAnalysis?startDate=2016-09-01&endDate=2016-09-30&mostAccurateOnly=true&speed=500&halfAngle=30&catalog=ALL&api_key=EMTkcLCSO1ZdgNMp6U1JGICVh1iqgg2yonmguwcc';
 
 
@@ -27,7 +24,7 @@ fetch(`${API_URL}`)
 
   return (
     <div>
-      {/* <div className="h-[700px] relative">
+      <div className="h-[700px] relative">
         <video
           autoPlay={true}
           loop={true}
@@ -36,21 +33,11 @@ fetch(`${API_URL}`)
         >
           <source src={bgVideo} type="video/mp4" />
         </video>
-        
+
         <Navbar />
-      </div> */}
-      <Router>
-        <Switch>
-          <Route path="/" exact>
-            <Earth/>
-          </Route>
-          <Route path="/Mars" exact>
-            <Mars/>
-          </Route>
-        </Switch>
-      </Router>
+      </div>
     </div>
   );
 };
 
-export default App;
+export default Earth;
