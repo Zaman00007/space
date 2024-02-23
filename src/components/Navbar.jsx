@@ -26,7 +26,7 @@ const Navbar = ({ planetName }) => {
                 <a href="#"></a>
               </li>
               <li>
-                <a href="#">Galaxy</a>
+                <a href="#">Cosmic Events</a>
               </li>
               <li>
                 <a href="#">Satelite Data</a>
@@ -42,13 +42,14 @@ const Navbar = ({ planetName }) => {
                 {planetName}
               </button>
               {isOpen && (
-                <div className="dropdown-menu">
-                  <Link to="/Mars">Mars</Link>
-                  <Link to="/Jupiter">Jupiter</Link>
-                  <Link to="/Saturn">Saturn</Link>
-                  <Link to="/Neptune">Uranus</Link>
-                  <Link to="/">{planetName}</Link>
-                </div>
+                <div className="dropdown text-white px-2 flex justify-between items-center">
+                <div className="px-2"><Link to="/Mars">Mars</Link></div>
+                <div className="px-2"><Link to="/Jupiter">Jupiter</Link></div>
+                <div className="px-2"><Link to="/Saturn">Saturn</Link></div>
+                <div className="px-2"><Link to="/Neptune">Uranus</Link></div>
+                <div className="px-2"><Link to="/">{planetName}</Link></div>
+            </div>
+            
               )}
             </div>
           </div>
